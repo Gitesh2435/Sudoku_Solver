@@ -1330,3 +1330,25 @@ function printBoardOnWeb(matrix)
 //-----------------------------------------------END HelperFunction------------------------------------------------
 //-----------------------------------------------END HelperFunction------------------------------------------------
 //-----------------------------------------------END HelperFunction------------------------------------------------
+
+
+// Alert
+const showAlert = (msg,className)=>{
+    //create alert
+
+    const alert = document.createElement('div');
+    alert.classList.add('alert');
+    alert.classList.add(className);
+    alert.appendChild(document.createTextNode(msg));
+    
+    //append to body
+
+    document.querySelector('body').appendChild(alert);
+    
+    setTimeout(()=>{
+        
+        document.querySelector('body').removeChild(alert);
+
+
+    },5000)
+}

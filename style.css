@@ -17,7 +17,8 @@ input
 
 .cell input.succeeded
 {
-    border-color: rgb(120, 255, 0);
+    border-color: rgb(218, 91, 18);
+    /* border-color: rgb(22, 46, 2); */
 }
 
 .btn
@@ -29,6 +30,7 @@ input
     text-decoration: none;
     color:white;
     background-color: rgb(49, 155, 255);
+    /* background-color: rgb(3, 22, 41); */
     font-size: 20px;
     cursor: pointer;
 }
@@ -48,12 +50,11 @@ input
 
 body
 {
-    background: url('background.png') no-repeat fixed;
+    /* background: url('background.png') no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-
+    background-size: cover; */
     font-family: Arial, Helvetica, sans-serif;
 }
 /* END General style */
@@ -86,7 +87,8 @@ body
 /* START Menu-Style.heading "Sudoku Solver Visualizer"*/
 #nav-bar h2
 {
-    color: rgb(0, 255, 0);
+    /* color: rgb(0, 255, 0); */
+    color: rgb(1, 26, 1);
     font-style: italic;
     padding: 10px;
     font-size: 25px;
@@ -156,7 +158,7 @@ body
 /* START algo-info style */
 .algo-info-class
 {
-    background-color: rgb(49, 155, 255);
+    background-color: rgb(115, 171, 223);
     word-wrap: break-word;
     margin-left: 2.5%;
     width: 25%;
@@ -261,3 +263,26 @@ tr:nth-child(3n) td
     font-size: 30px;
 }
 /* END main-div.Table style */
+
+
+/* Alert */
+.alert{
+    width:50%;
+    padding:1rem;
+    z-index:100;
+    position: absolute;
+    top:5.5rem;
+    left:0.5rem;
+    border-radius:3px;
+    color:#fff;
+    transition:0.3s all;
+}
+.alert.hidden{
+    left:-50rem;
+}
+.alert.danger{
+    background:#800000df;
+}
+.alert.success{
+    background:#158000df;
+}
